@@ -145,7 +145,6 @@
     transition:background .18s ease, color .18s ease, border-color .18s ease, transform .12s ease;
   }
   .tab-btn .d{font-size:10.5px;opacity:.6;font-weight:500;}
-  .tab-btn:hover{transform:translateY(-1px);}
   .tab-btn.active{
     background:var(--teal);
     border-color:var(--teal);
@@ -154,7 +153,7 @@
   .tab-btn.active .d{color:var(--gold);opacity:1;}
 
   /* ---------- Content ---------- */
-  main{max-width:960px;margin:0 auto;padding:26px 16px 70px;}
+  main{max-width:960px;margin:0 auto;padding:26px 16px 32px;}
   .day-panel{display:none;animation:fadein .35s ease;}
   .day-panel.active{display:block;}
   @keyframes fadein{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
@@ -199,6 +198,7 @@
   .locator-row{
     display:flex;align-items:center;gap:10px;
     margin:0 4px 10px;
+    justify-content: center;
   }
   svg.locator{width:64px;height:auto;flex:0 0 auto;}
   .locator-island{fill:#DDEDE9;stroke:#B7CFC9;stroke-width:1.4;}
@@ -281,7 +281,7 @@
   .day-footnotes ul{margin:0;padding-left:18px;font-size:13px;color:#42545A;line-height:1.7;}
 
   footer{
-    text-align:center;font-size:12px;color:#8A9A9D;padding:20px 16px 40px;
+    text-align:center;font-size:12px;color:#8A9A9D;padding:20px 16px 20px;
   }
 
   /* waves decorative animation for beach-y stops */
@@ -303,12 +303,12 @@
   <div class="hero-sun"></div>
   <div class="eyebrow-flight">✦ 6人峇厘島小團・9/28–10/2</div>
   <h1 class="display">峇厘島之旅</h1>
-  <p class="sub">五天四夜，包車小團行程。點選下方分頁切換每一天的路線、時間與注意事項。</p>
+  <p class="sub">五天四夜，包車小團行程。<br>點選下方分頁切換每一天的路線、時間與注意事項。</p>
 
   <div class="flights">
     <div class="flight-leg">
       <div class="route">TPE → DPS</div>
-      <div class="time">9/28（一）09:50 起飛・15:15 抵達</div>
+      <div class="time">9/28 (一) <br>09:50 起飛・<br>15:15 抵達</div>
       <span class="carrier">長榮航空</span>
     </div>
     <div class="flight-mid">
@@ -317,7 +317,7 @@
     </div>
     <div class="flight-leg" style="text-align:right;">
       <div class="route">DPS → TPE</div>
-      <div class="time">10/2（五）17:20 起飛・22:50 抵達</div>
+      <div class="time">10/2 (五)<br>17:20 起飛<br>・22:50 抵達</div>
       <span class="carrier">星宇航空</span>
     </div>
   </div>
@@ -335,7 +335,10 @@
 
 <main id="main"></main>
 
-<footer>此網頁為行程規劃參考，餐廳／景點實際地點與車程仍待與旅行社確認再做調整。</footer>
+<footer>
+  <p style="margin-bottom:60px;">此網頁為行程規劃參考，餐廳／景點實際地點與車程仍待與旅行社確認再做調整。</p>
+  <small style="opacity:.6;">🌴 Made by Pinchun & Claude.ai</small>
+</footer>
 
 <script>
 /* ============ DATA ============ */
