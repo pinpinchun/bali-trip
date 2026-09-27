@@ -381,7 +381,7 @@ const DAYS = [
       {type:"move", time:"08:45–10:15", title:"移動到阿勇河泛舟入口", desc:"庫塔到烏布一帶車程約 35-38 公里，視時段落在 60-150 分鐘不等，抓中間值。", emoji:"🚗", badges:[{c:"warn",t:"車程波動大"}]},
       {type:"visit", time:"10:30–12:30", title:"阿勇河泛舟", desc:"峇厘島經典泛舟路線，沿途經過峽谷與瀑布，屬休閒等級。行李盡量簡便，戴眼鏡的人建議用防丟繩固定。", emoji:"🛶", photoUrl:PHOTOS.rafting, badges:[{c:"tip",t:"會弄濕，備換洗衣物"}]},
       {type:"meal", time:"13:00–14:00", title:"泛舟風味餐（午餐）", desc:"泛舟公司附設餐廳，印尼式自助餐，份量足夠。", emoji:"🍛", badges:[]},
-      {type:"visit", time:"14:20–15:20", title:"烏布傳統市場", desc:"提前抵達避開收攤風險。標價是觀光客價，對半砍是基本，甚至可以砍到 3-4 折，不好意思開口很容易被當肥羊。", emoji:"🛒", photoUrl:PHOTOS.market, badges:[{c:"tip",t:"一定要殺價"}]},
+      {type:"visit", time:"14:20–15:20", title:"烏布傳統市場", desc:"提前抵達避開收攤風險。標價是觀光客價，對半砍是基本，甚至可以砍到 3-4 折，不好意思開口很容易被當肥羊。建議殺價參考：草編包包(咖啡色)大15萬/中12萬/小10萬、草木包包大12萬/中10萬/小8萬、杯墊3萬(竹編5萬)、小貓咪10萬、T-shirt 3萬、拖鞋3萬、烏克麗麗15萬。", emoji:"🛒", photoUrl:PHOTOS.market, badges:[{c:"tip",t:"一定要殺價"}]},
       {type:"visit", time:"15:50–17:10", title:"Alas 梯田園區", desc:"梯田景觀拍照打卡園區，鳥巢鞦韆、天堂之門、愛心框景等造型多是分開收費（約 IDR 100,000–150,000/項），現場可另租長裙。", emoji:"🌾", photoUrl:PHOTOS.terrace, badges:[{c:"warn",t:"設施分開收費"}]},
       {type:"meal", time:"17:40–19:00", title:"水上餐廳（晚餐）", desc:"實際地點待與旅行社確認。", emoji:"🌊", photoUrl:PHOTOS.floatingrest, badges:[{c:"warn",t:"地點待確認"}]},
       {type:"move", time:"19:00–20:30+", title:"返回庫塔飯店", desc:"", emoji:"🌙", badges:[]},
@@ -394,11 +394,11 @@ const DAYS = [
     map:{
       bounds:{minLat:-8.73,maxLat:-8.41,minLng:115.16,maxLng:115.29},
       pins:[
-        {lat:-8.71585,lng:115.1841778,label:"飯店"},
+        {lat:-8.7080705,lng:115.1847428,label:"SwissBel Hotel Rainforest"},
         {lat:-8.4676752,lng:115.2489186,label:"阿勇河泛舟"},
         {lat:-8.5064163,lng:115.2615994,label:"傳統市場"},
         {lat:-8.4317112,lng:115.279303,label:"Alas 梯田"},
-        {lat:-8.531263,lng:115.2719129,label:"水上餐廳"},
+        {lat:-8.531263,lng:115.2719129,label:"水上餐廳（假設，待確認）"},
       ]
     }
   },
@@ -421,11 +421,12 @@ const DAYS = [
       "海象會直接影響快艇時刻與整體行程順序，需保留彈性。",
     ],
     map:{
-      bounds:{minLat:-8.77,maxLat:-8.68,minLng:115.16,maxLng:115.56},
+      bounds:{minLat:-8.77,maxLat:-8.60,minLng:115.15,maxLng:115.56},
       pins:[
-        {lat:-8.71585,lng:115.1841778,label:"飯店"},
+        {lat:-8.7080705,lng:115.1847428,label:"SwissBel Hotel Rainforest"},
         {lat:-8.7053,lng:115.2624,label:"沙努爾碼頭"},
         {lat:-8.7278,lng:115.5444,label:"貝尼島"},
+        {lat:-8.6512929,lng:115.161045,label:"Villa（Umalas，換宿）"},
       ]
     }
   },
@@ -434,21 +435,21 @@ const DAYS = [
     title:"洋人街・懸崖午餐・烏魯瓦度神廟・岩石酒吧・Finns 續攤",
     desc:"這天可以睡晚一點。Villa 泳池早餐開場，一路南下到烏魯瓦度，晚上北返 Canggu 續攤看夜生活。",
     stops:[
-      {type:"visit", time:"09:00–10:00", title:"起床・Villa 泳池上早餐", desc:"Floating Breakfast，想安排但還沒特別去找租借業者，也還沒確認 Villa 本身是否有提供這項服務。", emoji:"🏊‍♀️", badges:[{c:"warn",t:"尚未確定"}]},
+      {type:"visit", time:"09:00–10:00", title:"起床・Villa 泳池上早餐", desc:"Floating Breakfast，想安排，改請導遊協助安排即可。", emoji:"🏊‍♀️", badges:[]},
       {type:"visit", time:"10:30–11:30", title:"洋人街（庫塔）", desc:"Jalan Legian / Poppies Lane 一帶，逛街、咖啡廳。車資旅行社有送。", emoji:"☕", photoUrl:PHOTOS.kutastreet, badges:[{c:"note",t:"車資已含"}]},
       {type:"meal", time:"12:45–14:15", title:"懸崖海景餐（午餐）", desc:"烏魯瓦度斷崖景觀餐廳，實際地點待與旅行社確認。", emoji:"🍽️", photoUrl:PHOTOS.cliffrest, photoPos:"center 65%", badges:[{c:"warn",t:"地點待確認"}]},
       {type:"visit", time:"14:30–15:30", title:"烏魯瓦度神廟", desc:"峇厘島代表性斷崖神廟，猴子多，眼鏡、耳環、手機容易被搶，提前跟朋友說一聲，現場收好貴重物品。", emoji:"🐒", photoUrl:PHOTOS.uluwatu, badges:[{c:"warn",t:"留意猴子"}]},
-      {type:"visit", time:"16:00–18:30", title:"岩石酒吧 Rock Bar", desc:"實際位於金巴蘭 AYANA Resort，斷崖景觀酒吧看夕陽，熱門時段常需排隊候位，酒水自理。", emoji:"🌇", photoUrl:PHOTOS.rockbar, badges:[{c:"tip",t:"酒水自理"},{c:"warn",t:"熱門候位久"}]},
+      {type:"visit", time:"16:00–18:30", title:"岩石酒吧 Rock Bar", desc:"實際位於金巴蘭 AYANA Resort，斷崖景觀酒吧看夕陽，熱門時段常需排隊候位，酒水自理。服裝規定：嚴禁穿著無袖背心（男性）、衝浪海灘褲、印有酒類或飲料商標的服飾，也請盡量避免穿著夾腳拖鞋，否則可能會被婉拒入場。", emoji:"🌇", photoUrl:PHOTOS.rockbar, badges:[{c:"tip",t:"酒水自理"},{c:"warn",t:"熱門候位久"},{c:"warn",t:"服裝規定"}]},
       {type:"meal", time:"19:00–20:30", title:"夕陽海景餐（晚餐）", desc:"地點待與旅行社確認，暫假設在金巴蘭一帶。", emoji:"🍷", badges:[{c:"warn",t:"地點待確認"}]},
       {type:"visit", time:"21:30 後", title:"Finns Beach Club（續攤）", desc:"位於 Canggu，營業到 24:00，深夜氣氛偏 DJ／Live 表演，Happy Hour 已過、菜單可能縮減。另外請導遊帶我們去，車資可能另計。", emoji:"🍹", photoUrl:PHOTOS.finns, badges:[{c:"tip",t:"深夜菜單縮減"},{c:"warn",t:"車資可能另計"}]},
     ],
     notes:[
-      "岩石酒吧有服儀規定，不能穿著泳衣、背心、海灘褲。",
+      "Villa 已確定：Swiss-Belvillas Umalas，離 Canggu（Finns Beach Club）很近，車程約 10-15 分鐘，比原本假設更順路；離南部烏魯瓦度、金巴蘭一帶則有一段距離。",
     ],
     map:{
-      bounds:{minLat:-8.84,maxLat:-8.64,minLng:115.08,maxLng:115.19},
+      bounds:{minLat:-8.84,maxLat:-8.60,minLng:115.08,maxLng:115.19},
       pins:[
-        {lat:-8.6765059,lng:115.1590405,label:"Villa"},
+        {lat:-8.6512929,lng:115.161045,label:"Villa（Umalas）"},
         {lat:-8.717395,lng:115.1744144,label:"洋人街"},
         {lat:-8.829238,lng:115.0849282,label:"烏魯瓦度"},
         {lat:-8.7842394,lng:115.1384712,label:"岩石酒吧"},
@@ -461,9 +462,9 @@ const DAYS = [
     title:"咖啡工廠・土產店・按摩・返回台北",
     desc:"最後一天，早上採買伴手禮，午餐後安排按摩，15:20 抵達機場搭乘星宇返台。",
     stops:[
-      {type:"visit", time:"上午", title:"飯店早餐", desc:"", emoji:"🍳", badges:[]},
-      {type:"visit", time:"上午", title:"咖啡工廠 + 土產店", desc:"峇厘島咖啡園區導覽與品飲，順道採買咖啡、花生等伴手禮。", emoji:"☕", badges:[]},
-      {type:"meal", time:"中午", title:"山水雨林餐廳（午餐）", desc:"依山傍水的雨林景觀餐廳。", emoji:"🌳", badges:[]},
+      {type:"visit", time:"上午", title:"早餐自理", desc:"", emoji:"🍳", badges:[]},
+      {type:"visit", time:"上午", title:"咖啡工廠 + 土產店", desc:"峇厘島咖啡園區導覽與品飲，順道採買咖啡、花生等伴手禮。", emoji:"☕", badges:[{c:"warn",t:"地點待確認"}]},
+      {type:"meal", time:"中午", title:"山水雨林餐廳（午餐）", desc:"依山傍水的雨林景觀餐廳。", emoji:"🌳", badges:[{c:"warn",t:"地點待確認"}]},
       {type:"visit", time:"午後", title:"按摩", desc:"這是追加行程，當天直接跟導遊說即可安排，車資旅行社送，但按摩費用另計。", emoji:"💆", photoUrl:PHOTOS.massage5, badges:[{c:"note",t:"當天跟導遊說"},{c:"warn",t:"按摩費用另計"}]},
       {type:"move", time:"約 15:20", title:"抵達機場", desc:"17:20 起飛，國際線建議提前抓充足時間辦理登機。", emoji:"🧳", badges:[]},
       {type:"move", time:"17:20–22:50", title:"星宇航空 DPS → TPE", desc:"搭乘星宇航空返回台北桃園機場，結束五天四夜的峇厘島之旅。", emoji:"✈️", badges:[]},
@@ -474,9 +475,9 @@ const DAYS = [
     map:{
       bounds:{minLat:-8.75,maxLat:-8.43,minLng:115.16,maxLng:115.28},
       pins:[
-        {lat:-8.6765059,lng:115.1590405,label:"Villa"},
-        {lat:-8.4382,lng:115.2734,label:"咖啡工廠"},
-        {lat:-8.5,lng:115.25,label:"雨林餐廳"},
+        {lat:-8.6512929,lng:115.161045,label:"Villa（Umalas）"},
+        {lat:-8.4382,lng:115.2734,label:"咖啡工廠（假設，待確認）"},
+        {lat:-8.5,lng:115.25,label:"雨林餐廳（假設，待確認）"},
         {lat:-8.7469933,lng:115.1681655,label:"機場"},
       ]
     }
